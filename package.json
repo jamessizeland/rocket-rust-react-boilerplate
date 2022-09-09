@@ -11,10 +11,9 @@
     "build": "tsc && vite build && cd server && cargo build --release",
     "serve:dev": "cd server && cargo --color=always watch -x run -w src",
     "serve:release": "cd server && cargo --color=always run --release",
-    "fullstack": "concurrently --prefix-colors cyan,magenta --kill-others -n server,frontend \"yarn serve:dev\" \"yarn dev\" ",
+    "fullstack": "concurrently --prefix-colors red,magenta --kill-others -n rust,react \"yarn serve:dev\" \"yarn dev\" ",
     "preview": "vite preview",
-    "clippy": "cargo clippy --manifest-path server/Cargo.toml",
-    "start": "concurrently --prefix-colors cyan,magenta --kill-others -n server,frontend \"yarn serve:release\" \"yarn dev\""
+    "clippy": "cargo clippy --manifest-path server/Cargo.toml"
   },
   "dependencies": {
     "@headlessui/react": "^1.6.4",

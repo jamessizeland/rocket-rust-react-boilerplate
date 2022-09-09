@@ -89,6 +89,7 @@ const Button = React.forwardRef(
       type={submit ? 'submit' : 'button'}
       disabled={disabled}
       className={clsx(
+        'mx-1',
         className,
         block ? style.block : '',
         disabled ? style.disabled : '',

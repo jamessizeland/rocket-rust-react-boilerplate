@@ -18,7 +18,7 @@ const Logo = ({
   return (
     <img
       className={clsx(
-        'hover:animate-twSpin hover:animate-infinite hover:animate-slow',
+        'hover:animate-heartBeat hover:animate-infinite hover:animate-slow',
         'mx-2',
         className,
       )}
