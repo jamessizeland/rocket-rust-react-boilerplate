@@ -1,3 +1,5 @@
+## https://rocket.rs/v0.5-rc/guide/configuration/
+
 ## defaults for _all_ profiles
 [default]
 address = "0.0.0.0"

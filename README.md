@@ -1,6 +1,5 @@
 # Rust React TypeScript Boilerplate
 
-
 ## Frontend
 
 It is built with [React](https://reactjs.org/) and [TypeScript](https://www.typescriptlang.org/)
@@ -9,8 +8,7 @@ It uses [Tailwindcss](https://tailwindcss.com/) for styling, with [DaisyUI](http
 
 ## Backend
 
-It uses [Rust](https://www.rust-lang.org/) and [Actix](https://actix.rs/)
-
+It uses [Rust](https://www.rust-lang.org/) and [Rocket](https://rocket.rs/)
 
 ## Getting Started
 
