@@ -5,12 +5,12 @@ import {
   ModalBody,
   ModalHeader,
   ModalFooter,
+  AtomicLoader,
 } from 'components/Elements';
 import { useToggle } from 'hooks';
 import { ExampleData } from 'types';
 
 const TestPage = (): JSX.Element => {
-
   const [example, setExample] = useState<ExampleData>();
   const [message, setMessage] = useState('');
   const { isOpen, toggle } = useToggle();
@@ -26,6 +26,7 @@ const TestPage = (): JSX.Element => {
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </ModalBody>
+          <AtomicLoader />
           <ModalFooter>
             <Button onClick={() => toggle(true)}>Modal</Button>
           </ModalFooter>

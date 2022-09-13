@@ -23,3 +23,4 @@ export * from './sidenav/sidenav';
 // export * from './tooltip/tooltip';
 export * from './icon/icon';
 // export * from './charts/ResponsiveLine';
+export * from './Loader';
