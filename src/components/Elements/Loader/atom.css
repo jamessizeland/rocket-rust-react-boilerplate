@@ -4,7 +4,7 @@
  * Licensed under MIT
  */
 .la-ball-atom,
-.la-ball-atom > div {
+.la-ball-atom > .satellite {
     position: relative;
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
@@ -20,7 +20,7 @@
     color: #333;
 }
 
-.la-ball-atom > div {
+.la-ball-atom > .satellite {
     display: inline-block;
     float: none;
     background-color: currentColor;
@@ -32,14 +32,23 @@
     height: 32px;
 }
 
-.la-ball-atom > div:nth-child(1) {
+.crater {
+    position: relative;
+    width: 60%;
+    height: 60%;
+    top: 15%;
+    left: 55%;
+    overflow: clip;
+}
+
+.la-ball-atom > .satellite:nth-child(1) {
     position: absolute;
     top: 50%;
     left: 50%;
     z-index: 1;
     width: 60%;
     height: 60%;
-    background: #db901e;
+    /* background: #db901e; */
     border-radius: 100%;
     -webkit-transform: translate(-50%, -50%);
        -moz-transform: translate(-50%, -50%);
@@ -52,7 +61,7 @@
             animation: ball-atom-shrink 4.5s infinite linear;
 }
 
-.la-ball-atom > div:not(:nth-child(1)) {
+.la-ball-atom > .satellite:not(:nth-child(1)) {
     position: absolute;
     left: 0;
     z-index: 0;
@@ -65,7 +74,7 @@
             animation: ball-atom-zindex 1.5s 0s infinite steps(2, end);
 }
 
-.la-ball-atom > div:not(:nth-child(1)):before {
+.la-ball-atom > .satellite:not(:nth-child(1)):before {
     position: absolute;
     top: 0;
     left: 0;
@@ -83,21 +92,21 @@
             animation: ball-atom-position 1.5s 0s infinite ease, ball-atom-size 1.5s 0s infinite ease;
 }
 
-.la-ball-atom > div:nth-child(2) {
+.la-ball-atom > .satellite:nth-child(2) {
     -webkit-animation-delay: .75s;
        -moz-animation-delay: .75s;
          -o-animation-delay: .75s;
             animation-delay: .75s;
 }
 
-.la-ball-atom > div:nth-child(2):before {
+.la-ball-atom > .satellite:nth-child(2):before {
     -webkit-animation-delay: 0s, -1.125s;
        -moz-animation-delay: 0s, -1.125s;
          -o-animation-delay: 0s, -1.125s;
             animation-delay: 0s, -1.125s;
 }
 
-.la-ball-atom > div:nth-child(3) {
+.la-ball-atom > .satellite:nth-child(3) {
     -webkit-transform: rotate(120deg);
        -moz-transform: rotate(120deg);
         -ms-transform: rotate(120deg);
@@ -109,14 +118,14 @@
             animation-delay: -.25s;
 }
 
-.la-ball-atom > div:nth-child(3):before {
+.la-ball-atom > .satellite:nth-child(3):before {
     -webkit-animation-delay: -1s, -.75s;
        -moz-animation-delay: -1s, -.75s;
          -o-animation-delay: -1s, -.75s;
             animation-delay: -1s, -.75s;
 }
 
-.la-ball-atom > div:nth-child(4) {
+.la-ball-atom > .satellite:nth-child(4) {
     -webkit-transform: rotate(240deg);
        -moz-transform: rotate(240deg);
         -ms-transform: rotate(240deg);
@@ -128,7 +137,7 @@
             animation-delay: .25s;
 }
 
-.la-ball-atom > div:nth-child(4):before {
+.la-ball-atom > .satellite:nth-child(4):before {
     -webkit-animation-delay: -.5s, -.125s;
        -moz-animation-delay: -.5s, -.125s;
          -o-animation-delay: -.5s, -.125s;
@@ -140,7 +149,7 @@
     height: 16px;
 }
 
-.la-ball-atom.la-sm > div:not(:nth-child(1)):before {
+.la-ball-atom.la-sm > .satellite:not(:nth-child(1)):before {
     width: 4px;
     height: 4px;
     margin-top: -2px;
@@ -152,7 +161,7 @@
     height: 64px;
 }
 
-.la-ball-atom.la-2x > div:not(:nth-child(1)):before {
+.la-ball-atom.la-2x > .satellite:not(:nth-child(1)):before {
     width: 20px;
     height: 20px;
     margin-top: -10px;
@@ -164,7 +173,7 @@
     height: 96px;
 }
 
-.la-ball-atom.la-3x > div:not(:nth-child(1)):before {
+.la-ball-atom.la-3x > .satellite:not(:nth-child(1)):before {
     width: 30px;
     height: 30px;
     margin-top: -15px;
